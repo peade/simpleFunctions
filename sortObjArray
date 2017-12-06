@@ -18,6 +18,18 @@ function sortObjArr(attr,rev) {
         }
     }
     
+    function compare(property) {
+        return function (a,b) {
+            if(a[property]>b[property]){
+                return 1
+            }
+            if(a[property]<b[property]){
+                return -1
+            }
+            return 0
+        }
+    }
+    
     //usage
 // rev=true, ascend，rev=false descend
 var arr=[{a:'book',b:2},{a:'music',b:3}]
