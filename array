@@ -1,6 +1,9 @@
 // sort obj array
 
 function sortObjArr(attr,rev) {
+        // rev reverse 
+        // rev true  正序  小在前，大在后  
+        // rev false 倒序  大在前，小在后
         if(rev ==  undefined){
             rev = 1;
         }else{
